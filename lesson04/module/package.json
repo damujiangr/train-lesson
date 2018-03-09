@@ -1,0 +1,25 @@
+{
+  "name": "modueltest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "a.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel b.js --out-file dist.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "babel":{
+    "presets": [
+      ["env", {
+        "targets": {
+          "node": "8.9"
+        }
+      }]
+    ]
+  }
+}
